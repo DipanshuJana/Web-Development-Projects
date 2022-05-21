@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding-left: 50px;
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.nav-left img, #homeContent img{
+    border-radius: 50%;
+}
+
+.nav-right input, .nav-right button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-right input:focus{
+    outline: none;
+}
+
+.nav-right button{
+    padding: 6px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-left: 5px;
+}
+
+.background{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/bg.jpg') no-repeat center center/cover;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+}
+
+#homeContent{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    width: 50%;
+}
+
+#homeContent button{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+#homeContent button:hover{
+    color: black;
+    background-color: white;
+}
+
+.main{
+    margin-top: 90vh;
+    padding: 20px;
+}
+
+.rowBox{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+ .rowBox img{
+     margin: 0 20px;
+     width: 20%;
+     height: 20%;
+     border-radius: 5px;
+     transition: all 0.5s ease;
+ }
+
+.rowBox:hover img{
+    box-shadow: 0 0 10px 5px rgb(116, 116, 116);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+}
+
+#contact h1{
+    text-align: center;
+}
+
+#contact input, textarea{
+    padding: 10px;
+    width: 800px;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 0;
+    max-width: 800px;
+    min-width: 800px;
+}
+
+#contact button{
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.footer{    
+    background-color: #001f42;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}

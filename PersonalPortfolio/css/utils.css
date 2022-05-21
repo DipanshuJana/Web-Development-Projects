@@ -1,0 +1,259 @@
+.m-auto{
+    margin: auto;
+}
+
+.list-style{
+    list-style: none;
+}
+
+.vertical-center{
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.nav-left span{
+    font-weight: 200;
+    top: 20px;
+    position: absolute;
+}
+
+.nav-right ul li a{
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-right ul li a:hover{
+    color: #9B9AEA;
+}
+
+.nav-left h1{
+    font-weight: 500;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.line{
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    margin: 4px;
+}
+
+#home h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#name{
+    font-weight: 500;
+}
+
+.about h1{
+    font-size: 30px;
+}
+
+.text-section h1{
+    color: #9B9AEA;
+    font-weight: 500;
+}
+
+.text-section p{
+    margin-top: 30px;
+}
+
+.image-section img{
+    border-radius: 5px;
+}
+
+#hamburger-nav button{
+    margin-top: 10px;
+}
+
+.info-details{
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.s{
+    margin-right: 0;
+}
+
+.services-box img{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width: 100%;
+    height: 100%;
+    transform: rotate(36deg) scale(1.9);
+    transition: all 1s ease;
+    border-radius: 5px;
+}
+
+.services-box h1{
+    margin-bottom: 10px;
+}
+
+.services-box div{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-box:hover img{
+    transform: rotate(0deg);
+}
+
+#services-heading{
+    font-weight: 500;
+}
+
+#galary-heading{
+    font-weight: 500;
+}
+
+.galary-top{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#galary-heading{
+    margin-right: 100px;
+}
+
+.galary-top ul{
+    padding: 0 30px;
+    border-radius: 25px;
+    margin-left: 100px;
+    border: 2px solid rgb(214, 214, 214);
+}
+
+.galary-top ul li{
+    position: relative;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.galary-top ul li::before{
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease-in;
+    background-color: black;
+    height: 3px;
+    top: 42px;
+    left: 0;
+}
+
+.galary-top ul li:hover::before{
+    animation: increase-border-width 0.5s ease-in-out forwards alternate;
+}
+
+.image-galary{
+    justify-content: center;
+    width: 100%;
+}
+
+.image-galary img{
+    margin: 10px;
+    animation: imageMove 4s forwards;
+}
+
+#all, #technology, #design, #nature{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#technology,#design, #nature{
+    display: none;
+}
+
+#contact-heading{
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-sidebar p{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-sidebar img{
+    border-radius: 10px;
+}
+
+.contact-form input, textarea{
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: white;
+    border: 4px solid #9B9AEA;
+    max-width: 400px;
+    font-size: 16px;
+    min-width: 400px;
+}
+
+.contact-form button{
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 4px solid #9B9AEA;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.contact-form input:focus{
+    outline: none;
+}
+
+.contact-form textarea:focus{
+    outline: none;
+}
+
+.contact-form button:hover{
+    background-color: #9B9AEA;
+}
+
+.contact-form textarea{
+    margin: 10px 0;
+}
+
+.social-media-links span{
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.social-media-links span:hover{
+    background-color: #9B9AEA;
+}
+
+.footer p{
+    font-weight: 500;
+}
+
+#home a{
+    text-decoration: none;
+}

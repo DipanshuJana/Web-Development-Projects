@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1380px){
+    .songs-container{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 1118px){
+    .songs-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 856px){
+    .hamburger{
+        display: block;
+    }
+    .left-section{
+        display: none;
+    }
+
+    .right-section{
+        width: 100vw;
+    }
+
+    .song-img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .song-name{
+        font-size: 15px;
+    }
+
+    .song-album{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 739px){
+    .song-img{
+        display: none;
+    }
+
+    .song-name, .song-album{
+        margin-left: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 693px){
+    .songs-container{
+        grid-template-columns: auto auto;
+    }
+
+    .progress-bar{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 597px){
+    .progress-bar{
+        width: 150px;
+    }
+
+    .song-album{
+        font-size: 10px;
+    }
+
+    .volume-bar{
+        width: 80px;       
+    }
+}
+
+@media only screen and (max-width: 462px){
+    .songs-container{
+        grid-template-columns: auto;
+    }
+
+    .progress-bar{
+        width: 100px;
+    }
+}

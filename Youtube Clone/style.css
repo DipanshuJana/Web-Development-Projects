@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#head{
+    margin: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.branding a{
+    margin-left: 3px;
+    text-decoration: none;
+    color: black;
+}
+.branding span{
+    position: relative;
+    font-size: 13px;
+    top: -16px;
+    left: 3px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a5a5;
+}
+
+.search input[type='text']{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 400px;
+    padding: 0 5px;
+    border: none;
+}
+
+.search input[type='text']:focus{
+    outline: none;
+}
+
+.search input[type='submit']{
+    border: none;
+    border-left: 1px solid #a5a5a5;
+    width: 50px;
+    padding: 0 10px;
+    height: 32px;
+}
+
+.search #search{
+    position: relative;
+    left: 42px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+}
+
+.signUp{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(4, 0, 255);
+    font-size: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    border: 1px solid rgb(4, 0, 255);
+}
+
+.signUp h3{
+    padding-left: 3px;
+}
+
+.details #apps, #moreSettings{
+    margin: 0 8px;
+}
+
+#topDividor{
+    margin-top: 1px;
+    position: absolute;
+    right: 0;
+    width: 85%;
+}
+
+.main{
+    display: flex;
+}
+
+.main .sidebar{
+    width: 15%;
+    margin-top: 30px;
+}
+
+.main .sections{
+    cursor: pointer;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.main .sections:hover{
+    background-color: #e6e6e6;
+}
+
+.main .sections h2{
+    padding-left: 20px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebarDividor{
+    margin: 15px 0;
+    left: 0;
+    width: 99%;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(167, 167, 167);
+}
+
+.category{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-size: 5.97px;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 8vh;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.category h1{
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.category h1:hover{
+    background-color: #e2e2e2;
+}
+
+.videos{
+    display: flex;
+    position: absolute;
+    height: 180vh;
+    flex-wrap: wrap;
+    background-color: rgb(233, 233, 233);
+    top: 17vh;
+    left: 15%;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.views{
+    padding-top: 10px;
+}
+
+.video{
+    margin: 20px 10px;
+}
+
+iframe{
+    border: none;
+    width: 280px;
+    height: 160px;
+}
+
+.video .logo{
+    margin: 5px 0;
+    border-radius: 34px;
+}
+
+.videoDetails{
+    display: flex;
+    align-items: center;
+}
+
+.videoDetails .title{
+    margin-left: 10px;
+    width: 240px;
+}
+
+.policy{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.policy p{
+    font-size: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.policy .copyright{
+    font-size: 20px;
+    padding-top: 15px;
+}

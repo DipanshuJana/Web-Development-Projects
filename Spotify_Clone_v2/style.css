@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-links img, li{
+    padding: 10px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover{
+    color: chartreuse;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    width: 90%;
+    margin: 20px auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/6320/smartphone-vintage-technology-music.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+}
+
+.container h1{
+    color: white;
+}
+
+.song-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    padding: 10px 0;
+    margin: 10px 20px;
+}
+
+.song-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: 400px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.right img{
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+.song-box img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.left-footer{
+    display: flex;
+    align-items: center;
+}
+
+#song-logo{
+    width:40px;
+}
+
+.footer{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.middle-footer{
+    display: flex;
+    align-items: flex-end;
+}
+
+#audio-range{
+    width: 400px;
+}
+
+#song-name, #song-logo{
+    margin-left: 10px;
+}
+
+#volume-range{
+    margin-right: 10px;
+}
+
+#song-current-time, #song-duration{
+    margin-bottom: 0;
+}
+
+#backward, #forward{
+    margin: 0 5px;
+}
+
+.middle-footer p{
+    margin: 10px;
+}
+
+.button-area{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.button-area img{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}

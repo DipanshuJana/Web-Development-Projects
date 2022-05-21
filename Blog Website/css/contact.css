@@ -1,0 +1,24 @@
+.contact-content{
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    height: 70.6vh;
+    padding: 25px 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form input, textarea{
+    margin: 10px 0;
+    width: 44vw;
+    border: 3px solid  #001f42;
+    border-radius: 4px;
+}
+
+.contact-form textarea{
+    padding: 5px 10px;
+}

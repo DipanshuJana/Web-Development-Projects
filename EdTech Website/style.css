@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#top{
+    display: flex;
+}
+
+#top .left{
+    display: flex;
+    align-items: center;
+}
+
+#top .right{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+}
+
+#top img{
+    margin: 10px;
+}
+
+#top #glass{
+    position: absolute;
+    right: 183px;
+    margin: 0;
+    width: 30px;
+}
+
+#top #search{
+    font-size: 15px;
+    border: none;
+    padding: 0 10px;
+    width: 48%;
+    background-color: #f3f3f3;
+    color: #383749;
+    height: 42px;
+}
+
+#top #search:focus{
+    outline: none;
+}
+
+#top #submit{
+    background-color: #19c880;
+    width: 50px;
+    height: 42px;
+    border: none;
+}
+
+#top a{
+    padding: 5px 10px;
+    border-radius: 18px;
+    background-color: #dadada;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    position: absolute;
+    right: 0px;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    z-index: 1;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    padding: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: #19c880;
+}
+
+.navbar span{
+    color: #19c880;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 45px;
+}
+
+#home #caption, #head, #home p, #btn{
+    z-index: 1;
+    color: #19c880;
+    padding-left: 20%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#home #head{
+    font-size: 2rem;
+    color: white;
+}
+
+#home p{
+    text-transform: none;
+    width: 70%;
+    color: white;
+    z-index: 1;
+    padding-left: 20%;
+    font-size: 1rem;
+    padding-top: 2vh;
+}
+
+#home #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    background: transparent;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid #19c880;
+    cursor: pointer;
+    margin-left: 20%;
+    width: 10%;
+    height: 5vh;
+    padding: 20px;
+}
+
+#home #btn:hover{
+    background-color: #19c880;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+}
+
+.features img{
+    width: 50px;
+    padding-bottom: 25px;
+}
+
+.features h1{
+    font-size: 1.4rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+    border-right: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.effect{
+    margin-top: 20px;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+}
+
+.effect h2{
+    cursor: pointer;
+    display: none;
+}
+
+.effect:hover h2{
+    display: block;
+}
+
+.effect img{
+    padding: 0;
+}
+
+#courseHeading{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#courseHeading #btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-weight: bolder;
+    border: 2px solid #19c880;
+    cursor: pointer;
+    margin-left: 20%;
+    width: 10%;
+    height: 5vh;
+    padding: 20px;
+}
+
+#courseHeading #btn2:hover{
+    background-color: #19c880;
+    color: white;
+}
+
+.courses{
+    display: flex;
+    padding: 70px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.courseBox{
+    font-size: 10px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid rgb(235, 235, 235);
+    transition: all 0.2s ease-in;
+}
+
+.courseBox:hover{
+    box-shadow: 10px 10px 20px 0.1px rgb(186, 186, 186);
+}
+
+.courseBox .star{
+    height: 20px;
+}
+
+.courseBox .details{
+    padding: 20px;
+}
+
+.courseBox .name{
+    padding: 10px 0;
+}
+
+.courseBox .creator{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.courseBox .img{
+    width: 220px;
+}
+
+#about{
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+#about img{
+    width: 40%;
+}
+
+#about section{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+#about .analytics{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .stats{
+    color: #19c880;
+    margin: 20px 30px;
+    font-size: 1.5rem;
+    margin-left: 0;
+}
+
+#about section span{
+    font-size: 1rem;
+}
+
+#about .stats p{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#partnersHeading{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.partners{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#f7f7f7;
+}
+
+.bottom img{
+    width: 10%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.bottom .usage{
+    display: flex;
+}
+
+.bottom .usage h2{
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 15px;
+}

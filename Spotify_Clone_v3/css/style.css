@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.root{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-section{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 18vw;
+    background-color: black;
+    height: 100vh;  
+}
+
+.navbar{
+    padding: 20px 10px;
+}
+
+.navbar span{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.logo-heading{
+    font-weight: 400;
+}
+
+.navbar ul li h1{
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.dropdown{
+    cursor: pointer;
+    width: 30px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.logo{
+    cursor: pointer;
+    width: 40px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.right-section{
+    width: 82vw;
+}
+
+.acc-details{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 7vh;
+    background-color: #141414;
+}
+
+.acc-left {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+
+.hamburger{
+    display: none;
+    margin-left: 10px;
+}
+
+.line{
+    margin: 5px 0;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.acc-left span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    margin: 0 5px;
+}
+
+.acc-left img{
+    padding: 5px;
+    width: 30px;
+}
+
+.acc-right{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+
+.acc-right img{
+    width: 30px;
+    margin: 0 5px;
+}
+
+.acc-right span{
+    color: white;
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.acc-right h4{
+    font-weight: 400;
+}
+
+.acc-right button{
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.songs-container{
+    overflow: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    height: 83vh;
+    background-color: #262626;
+}
+
+.card{
+    position: relative;
+    height: 230px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card h2{
+    font-weight: 400;
+}
+
+.card img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 200px;
+}
+
+.song-details{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.bottom-section{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #1c1c1c;
+    justify-content: space-between;
+}
+
+.card span{
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+    top: 45%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.card-play-btn{
+    width: 40px !important;
+    background-color: white;
+    padding: 10px;
+}
+
+.song-section{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.song-section h3{
+    font-weight: 400;
+}
+
+.song-section img{
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    margin: 0 10px;
+    margin-right: 5px;
+}
+
+.play-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-icons{
+    display: flex;
+}
+
+.play-section span{
+    cursor: pointer;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.play-section img{
+    width: 30px;
+    padding: 10px;
+}
+
+
+.progress-bar{
+    width: 300px;
+    margin: 0 10px;
+}
+
+.playing-info{
+    display: flex;
+}
+
+.playing-info input{
+    accent-color: white;
+}
+
+.playing-info input:hover{
+    accent-color: rgb(0, 255, 106);
+}
+
+.volume-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    padding: 0 10px;
+}
+
+.volume-section input{
+    accent-color: white;
+}
+
+.volume-section input:hover{
+    accent-color: rgb(0, 255, 106);
+}

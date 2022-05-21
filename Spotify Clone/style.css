@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #c1ffd6;
+  height: 300px;
+}
+
+nav {
+  list-style: none;
+  height: 55px;
+  font-family: "Varela Round", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
+
+nav ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.main {
+  min-height: 75vh;
+  background-color: black;
+  color: rgb(11, 255, 182);
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 12px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.brandlogo img {
+  width: 30px;
+  padding: 0 10px;
+}
+
+.brandlogo {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: context-menu;
+}
+
+.songList h1 {
+  margin: 15px 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.bottom {
+  position: sticky;
+  height: 100px;
+  background-color: black;
+  color: #c1ffd6;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 4px;
+  position: relative;
+}
+
+.icons i {
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+#progressBar{
+  width: 50vw;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+#forward {
+  padding: 0 1.5px;
+  cursor: pointer;
+}
+
+#backward {
+  padding: 0 1.5px;
+  cursor: pointer;
+}
+
+#mainPlayBtn {
+  cursor: pointer;
+  padding: 0 1.5px;
+}
+
+.play{
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.songItem {
+  height: 35px;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  margin: 13px 23px;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.songItem img {
+  width: 25px;
+  margin: 0 10px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  font-weight: bolder;
+}
+
+.songListContainer {
+  margin: 23px 0;
+}
+
+.songInfo{
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 22px;
+}
+
+.songInfo img{
+  width: 60px;
+  border-radius: 34px;
+  align-items: center;
+  padding: 0 5px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track { 
+  background-color: #33302d; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7af9c4; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c1ffd6; 
+}

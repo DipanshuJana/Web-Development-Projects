@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon/site-logo.png">
+    <title>Spotify - Feel The Tune</title>
+</head>
+<body>
+    <div class="root">
+        <!-- left section start -->
+        <div class="left-section">
+            <!-- navbar start -->
+            <nav class="navbar">
+                <ul>
+                    <li><span><img class="logo" src="assets/icon/logo.png" alt=""></span><h1 class="logo-heading">Spotify</h1></li>
+                    <li><span><img class="dropdown" src="assets/icon/home.png" alt=""></span><h4>Home</h4></li>
+                    <li><span><img class="dropdown" src="assets/icon/search.png" alt=""></span><h4>Search</h4></li>
+                    <li><span><img class="dropdown" src="assets/icon/playlist.png" alt=""></span><h4>Your Playlist</h4></li>
+                </ul>
+            </nav>
+            <!-- navbar end -->
+        </div>
+        <!-- left section end -->
+        <!-- right section start -->
+        <div class="right-section">
+            <!-- acc-details start -->
+            <div class="acc-details">
+                <!-- acc-left start -->
+                <div class="acc-left">
+                    <span><img src="assets/icon/prev.png" alt=""></span>
+                    <span><img src="assets/icon/next.png" alt=""></span>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!-- acc-left end -->
+                <!-- acc-right start -->
+                <div class="acc-right">
+                    <button>Upgrade</button>
+                    <span><img src="user.png" alt=""><h4>Dipanshu Jana</h4></span>
+                </div>
+                <!-- acc-right end -->
+            </div>
+            <!-- acc-details end -->
+            <!-- song container start -->
+            <div class="songs-container">
+                <!-- card start -->
+                <div class="card">
+                    <img src="img/0.jpg" alt="">
+                    <audio preload="auto" src="audio/0.mp3"></audio>
+                    <span><img class="card-play" src="assets/icon/play.png" alt=""></span>
+                    <div class="song-details">
+                        <h2>Jaan hai Meri</h2>
+                        <h4>Radhe Shyam</h4>
+                    </div>
+                </div>
+                <!-- card end -->
+            </div>
+            <!-- song container end -->
+        </div>
+        <!-- right section end -->
+    </div>
+    <div class="bottom-section">
+        <div class="song-section">
+            <img class="song-img" src="assets/img/0.jpg" alt="">
+            <div class="song-info">
+                <h3 class="song-name">Jaan Hai Meri</h3>
+                <h4 class="song-album">Radhe Shyam</h4>
+            </div>
+        </div>
+        <div class="play-section">
+            <div class="play-icons">
+                <span><img class="backward-btn" src="assets/icon/prev.png" alt=""></span>
+                <span><img class="main-play-btn" src="assets/icon/play.png" alt=""></span>
+                <span><img class="foreward-btn" src="assets/icon/next.png" alt=""></span>
+            </div>
+            <div class="playing-info">
+                <p class="current-time"></p>
+                <input class="progress-bar" type="range" value="0">
+                <p class="song-duration"></p>
+            </div>
+        </div>
+        <div class="volume-section">
+            <input class="volume-bar" type="range" value="100">
+        </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>

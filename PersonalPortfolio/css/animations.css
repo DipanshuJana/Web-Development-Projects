@@ -1,0 +1,110 @@
+@keyframes extend{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 195px;
+    }
+}
+
+.html-fill-bar{
+    background: linear-gradient(to left, #9B9AEA, #75D5FF);
+    height: 10px;
+    border-radius: 40px;
+    animation: html 4s forwards;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 280px;
+    }
+}
+
+.css-fill-bar{
+    background: linear-gradient(to left, #9B9AEA, #75D5FF);
+    height: 10px;
+    border-radius: 40px;
+    animation: css 4s forwards;
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 250px;
+    }
+}
+
+.js-fill-bar{
+    background: linear-gradient(to left, #9B9AEA, #75D5FF);
+    height: 10px;
+    border-radius: 40px;
+    animation: js 4s forwards;
+}
+
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+.nodejs-fill-bar{
+    background: linear-gradient(to left, #9B9AEA, #75D5FF);
+    height: 10px;
+    border-radius: 40px;
+    animation: nodejs 4s forwards;
+}
+
+@keyframes nodejs{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 150px;
+    }
+}
+
+@keyframes move-left{
+    0%{
+        right: -100%;
+    }
+    
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes move-right{
+    0%{
+        right: 0;
+    }
+    
+    100%{
+        right: -100%;
+    }
+}
+
+@keyframes imageMove {
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes increase-border-width{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

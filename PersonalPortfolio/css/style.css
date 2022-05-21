@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-weight: 300;
+    z-index: 2;
+    width: 100%;
+    color: white;
+}
+
+.nav-left{
+    align-items: center;
+}
+
+.nav-right{
+    align-items: center;
+}
+
+#cv-btn{
+    background: linear-gradient(to right, #9B9AEA, #75D5FF);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 4px;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.background-image{
+    width: 100%;
+    background: url('../img/bg.png') no-repeat center center/cover;
+}
+
+#home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+}
+
+#home img{
+    margin: 20px 0;
+    border-radius: 50%;
+    border: 5px solid #9B9AEA;
+}
+
+#about-btn{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    border: 2px solid #9B9AEA;
+    background: transparent;
+    border-radius: 3px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+#about-btn::before{
+    content: "";
+    background-color: #9B9AEA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #9B9AEA;
+    z-index: -1;
+    animation: extend 1s both;
+}
+
+#about-btn:hover::before{
+    display: block;
+}
+
+.about{
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section{
+    margin-right: 50px;
+}
+
+.image-section{
+    align-items: center;
+}
+
+.bar{
+    width: 350px;
+    height: 10px;
+    background-color: #ececec;
+    border-radius: 40px;
+}
+
+.achievements{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #9B9AEA, #75D5FF);
+    border-radius: 5px;
+    margin: 20px;
+    transition: all 2.5s ease;
+}
+
+.achievements-box{
+    align-items: center;
+    margin: 10px;
+}
+
+.achievements:hover{
+    border-radius: 250px;
+    margin: 0 250px;
+}
+
+.achievements:hover .info-details{
+    font-size: 15px;
+}
+
+.services{
+    margin: 150px 50px;
+    text-align: center;
+}
+
+.services-box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+.services-box{
+    justify-content: center;
+    width: 250px;
+    margin: 20px 10px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.services-box:hover{
+    border: 2px solid rgb(208, 208, 208);
+}
+
+.galary{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.contact{
+    background-color: #f0f0f0;
+    margin-top: 150px;
+    padding: 30px 0;
+}
+
+.contact-container{
+    justify-content: center;
+    margin: 30px 10px;
+}
+
+.contact-form{
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.contact-sidebar{
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.footer{
+    background-color: #001f42;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}

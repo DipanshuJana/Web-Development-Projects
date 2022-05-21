@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    background-color: black;
+    height: 50vh;
+    opacity: 0.5;
+}
+
+.navbar{
+    font-family: 'Balsamiq Sans', cursive;
+    position: fixed;
+    display: flex;
+    width: 98%;
+    height: 40px;   
+    margin: 10px 15px;
+    align-items: center;
+    background-color: #8fffe5;
+    border-radius: 36px;
+    z-index: 2;
+}
+
+.navbar img{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    padding: 5px 15px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #8fffe5;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover{
+    border: 2px solid #4b49ae;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 60vh;
+    color: white;
+}
+
+#home h1{
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 1;
+    font-size: 2.4rem;
+}
+
+#home p{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 700px;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+#heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: 'Baumans', cursive;
+    font-size: 60px;
+}
+
+.services{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    width: auto;
+    height: 65vh;
+    text-align: center;
+}
+
+.services h1{
+    padding: 20px;
+    z-index: 1;
+}
+
+.services p{
+    z-index: 1;
+    width: 250px;
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+.ordering, .home-delivery, .catering{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor:default;
+    color: white;
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+.ordering{
+    background: url('img/food_order.jpg') no-repeat center center/cover;
+}
+
+.home-delivery{
+    background: url('img/delivery.jpg') no-repeat center center/cover;
+}
+
+.catering{
+    background: url('img/catering.jpg') no-repeat center center/cover;
+}
+
+.ordering:hover, .home-delivery:hover, .catering:hover{
+    transform: scale(1.15);
+}
+
+#contacts{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    margin: 10px 25px;
+    height: 90vh;
+    background: url('img/contacts.jpg') no-repeat center center/cover;
+}
+
+#contacts #head{
+    padding: 15px;
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Baumans', cursive;
+}
+
+#contacts input{
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 10px 50px;
+    height: 25px;
+    border-radius: 10px;    
+}
+
+#messagebox{
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.input{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contacts input[type='submit']{
+    height: 40px;
+    width: 500px;
+    margin: 30px 0;
+}
+
+#partners{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    align-items: center;
+}
+
+#main{
+    font-family: 'Baumans', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    padding: 15px;
+}
+
+#swiggy{
+    width: 180px;
+    height: 87px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#zomato{
+    width: 87px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#kfc{
+    width: 100px;
+    height: 87px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#big-basket{
+    width: 166px;
+    height: 87px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    height: 40px;
+    background-color: black;
+    font-size: 10px;
+}
+
+@media screen and (min-width:829px) and (max-width: 1140px){
+    .services{
+        justify-content: unset;
+        height: 150vh;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .catering, .ordering, .home-delivery{
+        width: 1000px;
+        padding: 0px 10px;
+        margin: 20px 0;
+    }
+
+    .services p{
+        width: 800px;
+    }
+
+    #contacts{
+        height: 100vh;
+    }
+
+    #partners{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:829px){
+    .navbar{
+        width: 65%;
+        margin: 10px 5px;
+        text-align: center;
+    }
+    
+    #home p{
+        width: 320px;
+    }
+
+    .navbar ul li a{
+        font-size: 11px;
+        padding: 6px 9px;
+        text-align: center;
+    }
+    
+    .navbar img{
+        margin: 0 5px;
+    }
+
+    .services{
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    #contacts{
+        width: 600px;
+    }
+}

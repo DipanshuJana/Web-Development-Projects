@@ -1,0 +1,649 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* adding main background */
+.background {
+  width: 95.2%;
+  background: url("img/home.jpg") no-repeat center center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  z-index: -1;
+  height: 80vh;
+  filter: blur(10px);
+  transform: scale(1.1);
+}
+
+/* styling the navbar itself */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  width: 92%;
+  z-index: 1;
+}
+
+/* styling the h1 (main text) of the navbar */
+.navbar h1 {
+  color: white;
+}
+
+/* styling the list of the navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+/* styling the list anchor tags of the navbar */
+.list a {
+  font-size: 0.9rem;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* styling the content on the background */
+.content {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* styling the paragraph tag of the content */
+.content p {
+  padding-top: 10px;
+  width: 500px;
+}
+
+/* styling the button of the content */
+.content button {
+  margin-top: 30px;
+  padding: 10px 35px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+/* adding some hover function to the button */
+.content button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* styling the container of the circle */
+.circleContainer{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+    width: 100%;
+    height:77vh;
+}
+
+/* creating a circle */
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: crimson;
+    border-radius: 50%;
+    box-shadow: 0 6px 5px rgb(73, 73, 73);
+}
+
+/* styling the icon inside circle */
+.circle img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* styling the about section of the website */
+#about {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* stlying all the paras of the about section */
+#about p {
+  width: 500px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+/* stlying the first para of the about section */
+#about .first {
+  padding: 20px 0;
+}
+
+/* stlying the h3 of the about section */
+#about h3 {
+  font-size: 0.7rem;
+  color: crimson;
+  font-weight: 500;
+}
+
+/* stlying the read more button of the about section */
+#about #readMore {
+  width: 118px;
+  font-size: 0.7rem;
+  margin-top: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.9s ease;
+}
+
+/* adding some hover fucntion to the read more button */
+#about #readMore:hover {
+  background-color: rgb(255, 204, 0);
+}
+
+/* styling all the images of the about section */
+#about img {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 1px black;
+}
+
+#about .textContent {
+  margin-right: 50px;
+}
+
+/* styling the second image of the about section */
+#about #second {
+  position: relative;
+  top: 80px;
+  left: -50px;
+}
+
+/* styling the hr tag */
+.div {
+  margin: 50px auto;
+  margin-top: 150px;
+  background-color: rgb(167, 167, 167);
+  border: none;
+  width: 60%;
+  height: 1px;
+}
+
+/* styling the achievement section */
+.achievements {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+/* styling all the four boxes of the achievement section */
+.achievementsBox {
+  margin: 0 40px;
+}
+
+/* styling the image section of the box in the achievement section */
+.achievementsBox .image {
+  display: flex;
+  justify-content: center;
+}
+
+/* styling the numbers of the box in the achievement section */
+.achievementsBox .image h1 {
+  color: crimson;
+}
+
+/* styling the images of the box in the achievement section */
+.achievementsBox .image img {
+  padding-right: 10px;
+}
+
+/* styling the head of the services section */
+.servicesHead {
+  text-align: center;
+  background-color: rgb(248, 248, 248);
+  padding: 100px 0;
+  padding-bottom: 80px;
+}
+
+/* styling the h3 inside services heading section */
+.servicesHead h3 {
+  color: crimson;
+}
+
+/* styling the services section */
+#services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+}
+
+/* styling the boxes inside the services section */
+.servicesBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 20px 10px;
+  height: 250px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* adding hover functions to the boxes inside services */
+.servicesBox:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 7px 10px 4px rgb(186, 186, 186);
+}
+
+/* creating a background circular shape outside the icons in the services section */
+.servicesBox .iconCircle {
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid rgb(192, 192, 192);
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: background 0.5s ease-in-out;
+}
+
+/* adding hover functions to the icon circles */
+.servicesBox:hover .iconCircle {
+  background-color: white;
+}
+
+/* styling the icons inside the circular div */
+.iconCircle img {
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid crimson;
+  background-color: crimson;
+  transition: all 0.5s ease;
+}
+
+.servicesBox:hover .iconCircle img {
+  background-color: white;
+}
+
+/* stlying the pragraphs of the boxes inside the services */
+.servicesBox p {
+  width: 350px;
+  text-align: center;
+}
+
+/* styling the div at the last of the services */
+.buttonClass {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 50px;
+}
+
+/* styling view all services button inside the button div */
+.buttonClass button {
+  color: white;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: crimson;
+  border-radius: 5px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+/* addig hover function to the button */
+.buttonClass button:hover {
+  background-color: rgb(255, 60, 99);
+}
+
+/* styling the blog heading */
+.blogHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+/* styling the h3 inside the blog heading */
+.blogHeading h3{
+    color: crimson;
+    font-size: 0.9rem;
+}
+
+/* styling the blog section */
+#blogs {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+/* styling the blog box inside the blog section */
+.blogBox {
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  margin: 10px;
+  width: 650px; 
+  cursor: pointer;
+  height: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* adding hover functions to the blog box */
+.blogBox:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 7px 10px 4px rgb(186, 186, 186);
+}
+
+/* styling the h1 of the blog box */
+.blogBox h1 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* styling the extra section inside the blog details */
+.extra {
+  display: flex;
+}
+
+/* styling the main image of the blog box */
+#blogs .main {
+  width: 30%;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* styling the icons of the blog box */
+.blogBox .extraImg {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* styling the hr of the blog box */
+.blogBox hr {
+  border: none;
+  background-color: black;
+  height: 1px;
+  margin: 10px auto;
+  width: 250px;
+}
+
+/* styling the details section of the blogbox */
+.blogDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling the end of the website */
+.end{
+    display: flex;
+    background-color: #001f42;
+    height: 40vh;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* styling the end box of the end section */
+.endBox{
+    margin: 100px;
+}
+
+/* styling the h3 of the end box */
+.endBox h3{
+    margin-bottom: 5px;
+}
+
+/* styling the p of the end box */
+.endBox p{
+    margin: 10px 0;
+    color: rgb(0, 81, 255);
+    cursor: pointer;
+}
+
+/* adding hover functions */
+.endBox p:hover{
+    color: white;
+    text-decoration: dashed;
+}
+
+/* styling the links of the  */
+.links{
+    display: flex;
+}
+
+/* creating circles with the icons */
+.socialCircle{
+    display: flex;
+    background-color: rgb(0, 123, 255);
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+/* adding hover function to the circles */
+.socialCircle:hover{
+    background-color: white;
+}
+
+/* styling the facebook section */
+.fb{
+    width: 20px;
+}
+
+/* styling the copyright section */
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #001f42;
+}
+
+/* styling the h1 of the copyright section */
+.copyright h1{
+    font-size: 1rem;
+    color: white;
+    margin: 50px;
+}
+
+/* adding responisveness to the website */
+
+/* for nest hub max */
+@media only screen and (max-width: 1280px){
+    .background{
+        width: 98%;
+    }
+    
+    .blogBox{
+        width: 100%;
+    }
+    
+    .end{
+        width: 101%;
+    }
+    
+    .copyright{
+        width: 101%;
+    }
+}
+
+
+/* for nest hub */
+@media only screen and (max-width: 1024px){
+    #about .imageContent img{
+        width: 135px;
+    }
+
+    .servicesBox{
+        width: 300px;
+    }
+
+    .servicesBox p{
+        width: 250px;
+    }
+
+    #blogs{
+        grid-template-columns: auto;
+    }
+    
+    .endBox{
+        margin: 70px 20px;
+    }
+}
+
+/* for samsung galaxy a51/a71/ */
+@media only screen and (max-width: 412px){
+    .background{
+        width: 97%;
+    }
+
+    .navbar h1{
+        position: absolute;
+        left: 165px;
+        justify-content: center;
+    }
+
+    .navbar{
+        padding:40px 30px;
+    }
+
+    .navbar ul{
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+    }
+
+    .content p{
+        width: 200px;
+    }
+
+    #about{
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    #about .textContent{
+        padding: 0;
+        width: 340px;
+    }
+
+    #about p{
+        width: 200px;
+    }
+
+    #about .imageContent{
+        margin-top: 100px;
+    }
+
+    .div{
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .achievements{
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .achievementsBox{
+        margin: 50px 10px;
+    }
+
+    #services{
+        grid-template-columns: auto;
+    }
+    
+    .blogBox{
+        width: 400px;
+        height: 100px;
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+    
+    .blogBox h1{
+        font-size: 0.9rem;
+    }
+
+    .blogBox .main{
+        flex-direction: column;
+    }
+
+    .end{
+        flex-wrap: wrap;
+    }
+
+    .endBox{
+        margin: 20px;
+    }
+}
+
+/* for ipad air */
+@media only screen and (max-width: 820px){
+    #about{
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    #about .textContent{
+        padding: 0;
+        width: 340px;
+    }
+
+    #about p{
+        width: 200px;
+    }
+
+    #about .imageContent{
+        margin-top: 100px;
+    }
+
+    .achievements{
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .achievementsBox{
+        margin: 100px;
+    }
+
+    #services{
+        grid-template-columns: auto;
+    }
+
+    .servicesBox{
+        width: 500px;
+    }
+}

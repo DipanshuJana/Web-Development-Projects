@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+}
+
+.nav-left ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    padding: 3px 10px;
+}
+
+.form-control{
+    padding: 6.5px 10px;
+    margin: 0 15px;
+    font-size: 0.8rem;
+    border: 2px solid  #001f42;
+    border-radius: 4px;
+}
+
+.btn{
+    padding: 6px 15px;
+    border: 2px solid  #001f42;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    transition: background 0.3s ease-in-out;
+}
+
+.content{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    padding: 20px;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img{
+    height: 244px;
+    width: 244px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 5px rgb(123, 123, 123);
+}
+
+.articles{
+    background-color: rgb(245, 245, 245);
+    margin: 50px auto;
+    padding: 10px 0;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+}
+
+.article-content{
+    margin: 0 30px;
+}
+
+.end{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #001f42;
+}

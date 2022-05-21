@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+:root{
+    --font1: 'Ubuntu', sans-serif;
+    --font2: 'Roboto', sans-serif;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+
+.font2{
+    font-family: var(--font2);
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+
+.max-width-3{
+    max-width: 100vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.mtop-1{
+    margin-top: 20px;
+}
+
+.mdown-1{
+    margin-bottom: 20px;
+}
+
+.image-style{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid  #001f42;
+}
+
+.nav-left span{
+    font-size: 1.5rem;
+}
+
+.content-left p{
+    padding-top: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.nav-left ul li a:hover{
+    border-radius: 20px;
+    color:  #001f42;
+}
+
+hr{
+    background-color: rgb(200, 200, 200);
+    height: 2px;
+    border: none;
+}
+
+.articles h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.articles h3{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.articles h4{
+    padding-top: 20px;
+}
+
+.article img{
+    margin-left: 20px;
+}

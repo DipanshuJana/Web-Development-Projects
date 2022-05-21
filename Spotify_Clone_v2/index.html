@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - get your favourite music here</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <img src="icons/logo.png" width="25px" height="25px">
+            <li><a href="#"><b>Spotify</b></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="song-container">
+            <h1>Best Hits Of 2022</h1>
+        </div>
+        <div class="song-container-2">
+        </div>
+    </div>  
+    <div class="footer">
+        <div class="left-footer">
+            <img src="" alt="" id="song-logo">
+            <p id="song-name"></p>
+        </div>
+        <div class="middle-footer">
+            <p id="song-current-time"></p>
+            <div class="range-div">
+                <div class="button-area">
+                    <img src="icons/backward.png"  id="backward">
+                    <img src="icons/play.png"  id="pause">
+                    <img src="icons/forward.png"  id="forward">
+                </div>
+                <input type="range" name="" id="audio-range" value=0>
+            </div>
+            <p id="song-duration"></p>
+        </div>
+        <div class="right-footer">
+            <input type="range" id="volume-range" value=100>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
