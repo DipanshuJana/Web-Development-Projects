@@ -16,7 +16,7 @@
     align-items: center;
     height: 60px;
     font-weight: 300;
-    z-index: 2;
+    z-index: 10000;
     width: 100%;
     color: white;
 }
@@ -69,24 +69,30 @@
     border-radius: 3px;
     padding: 8px 10px;
     cursor: pointer;
+    transition: .5s all ease;
 }
 
 #about-btn::before{
     content: "";
     background-color: #9B9AEA;
     position: absolute;
-    top: 0;
+    top: -1;
     left: 0;
-    display: none;
-    height: 30px;
+    width: 0;
+    height: 100%;
     border-radius: 3px;
-    border: 2px solid #9B9AEA;
+    border-top: 2px solid #9B9AEA;
+    border-bottom: 2px solid #9B9AEA;
     z-index: -1;
-    animation: extend 1s both;
+    transition: .5s all ease-in-out;
 }
 
 #about-btn:hover::before{
-    display: block;
+    width: 101%;
+}
+
+#about-btn:hover{
+    color: white;
 }
 
 .about{
@@ -111,22 +117,18 @@
 }
 
 .achievements{
+    width: 80%;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #9B9AEA, #75D5FF);
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px auto;
     transition: all 2.5s ease;
 }
 
 .achievements-box{
     align-items: center;
     margin: 10px;
-}
-
-.achievements:hover{
-    border-radius: 250px;
-    margin: 0 250px;
 }
 
 .achievements:hover .info-details{
@@ -163,13 +165,18 @@
 }
 
 .contact{
+    overflow: hidden;
+    width: 100%;
     background-color: #f0f0f0;
     margin-top: 150px;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .contact-container{
+    width: 100%;
+    height: 100%;
     justify-content: center;
+    align-items: center;
     margin: 30px 10px;
 }
 

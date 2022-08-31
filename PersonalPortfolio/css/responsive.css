@@ -19,6 +19,7 @@
     }
 
     .hamburger-menu{
+        cursor: pointer;
         z-index: 10;
     }
     
@@ -166,6 +167,11 @@
         width: 100%;
     }
 
+    .contact-sidebar p{
+        margin: 0 20px;
+        margin-bottom: 40px !important;
+    }
+
     .contact-form{
         justify-content: center;
         align-items: center;
@@ -256,7 +262,6 @@
     .contact-form input, textarea{
         max-width: 300px !important;
         min-width: 300px !important;
-        width: 100px;
     }
     
     .footer p{

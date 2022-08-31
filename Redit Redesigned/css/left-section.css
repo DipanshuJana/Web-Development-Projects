@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+.container{
+    display: flex;
+}
+
+.left-content{
+    width: 24%;
+}
+
+.mid-content{
+    width: 52%;
+    /* background-color: blue; */
+}
+
+.right-content{
+    width: 24%;
+    /* background-color: purple; */
+}
+
+.fav-section{
+    margin: 30px 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.fav-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fav-item p{
+    font-size: 10px;
+}
+
+.fav-item-left{
+    display: flex;
+    align-items: center;
+}
+
+.fav-item-left img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.fav-item-right img{
+    width: 12px;
+    height: 12px;
+}
+
+h5{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #f54f06;
+    cursor: pointer;
+    text-align: center;
+}
+
+.activity-section{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 50px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.activity-item{
+    margin: 10px 0;
+}
+
+.activity-item img{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.activity-item-top p{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.activity-item-bottom{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.activity-item-bottom button{
+    font-size: 7px;
+    padding: 2px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.top-communities-section{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 50px;
+    margin-bottom: 30px;
+}
+
+.top-com-item{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-com-item-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-com-item-left p{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.top-com-item-left img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.top-com-item-right button{
+    border: none;
+    background-color: #f54f06;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 2px 8px;
+}

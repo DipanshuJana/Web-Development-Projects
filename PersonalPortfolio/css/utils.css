@@ -144,6 +144,7 @@
     font-weight: 500;
     padding: 10px 20px;
     cursor: pointer;
+    transition: .5s all ease;
 }
 
 .galary-top ul li::before{
@@ -151,13 +152,15 @@
     position: absolute;
     transition: all 0.5s ease-in;
     background-color: black;
+    transition: .5s all ease-in-out;
+    width: 0;
     height: 3px;
     top: 42px;
     left: 0;
 }
 
 .galary-top ul li:hover::before{
-    animation: increase-border-width 0.5s ease-in-out forwards alternate;
+    width: 100%;
 }
 
 .image-galary{
@@ -219,10 +222,12 @@
 
 .contact-form input:focus{
     outline: none;
+    border: 4px solid #001f42;
 }
 
 .contact-form textarea:focus{
     outline: none;
+    border: 4px solid #001f42;
 }
 
 .contact-form button:hover{
