@@ -399,8 +399,63 @@
 }
 
 #subject{
-    padding: 10px;
+    padding: 10px 20px;
+    color: #666666;
     border: 2px solid rgb(150, 150, 150);
     width: 100%;
-    border
+    margin-top: 10px;
+    background-color: white;
+    font-weight: 800;
+    border: 2px solid rgb(216, 216, 216);
+}
+
+.full-name-enter input{
+    padding: 10px 20px;
+    color: #666666;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-weight: 800;
+    border: 2px solid rgb(216, 216, 216);
+}
+
+.email-address-enter input{
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #666666;
+    font-weight: 800;
+    border: 2px solid rgb(216, 216, 216);
+}
+
+.second-form-section{
+    margin-top: 25px;
+}
+
+.main-mid-section-9-left-heading{
+    width: 100%;
+    padding-left: 100px;
+}
+
+.third-form-section{
+    margin-top: 25px;
+}
+
+.third-form-section textarea{
+    padding: 10px 20px;
+    margin-top: 10px;
+    max-width: 645px;
+    min-width: 645px;
+    max-height: 150px;
+    min-height: 150px;
+    border: 2px solid rgb(216, 216, 216);
+}
+
+.third-form-section  button{
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: 800;
+    background-color: #ffa62b;
+    border: none;
+    color: #34383f;
+    border-radius: 5px;
 }
